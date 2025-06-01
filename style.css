@@ -1,0 +1,585 @@
+@charset "UTF-8";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width:375px;
+  margin:0 auto;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section{
+  padding: 32px 16px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+header{
+  background: #EAEAEA;
+  padding: 8px 16px;
+}
+
+header img{
+  max-width: 120px;
+}
+
+/* <section>CTAボタン */
+.cta{
+  background:#fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cta-btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta a{
+  display: block;
+  padding: 16px 40px;
+}
+
+.orange-btn{
+  background: #FFA552;
+  color: #FFF;
+  border-radius: 16px;
+}
+
+.line-btn{
+  background: #FFF;
+  color: #000;
+  border-radius: 16px;
+  border: 2px solid #06C755;
+}
+
+.line-btn span {
+  color: #06c755;
+  font-weight: bold;
+}
+
+
+/* ファーストビュー */
+#fv{
+  background: linear-gradient(180deg, #AEE6F9, #fff);
+  padding:0;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  position: relative;
+}
+
+.first{
+  margin: 100px auto 48px;
+}
+
+#fv h2{
+  color: #3A506B;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+
+}
+
+#fv-maru{
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+}
+
+.maru{
+  background-color: #EAEAEA;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.maru p{
+  font-weight: bold;
+  color:#3A506B;
+  margin: 0 auto;
+}
+
+
+/* こんなこと起こるかも？ */
+/* #troubles{
+} */
+
+#troubles h2{
+  color: #3A506B;
+  text-align: center;
+}
+
+#trouble{
+  background: #EAEAEA;
+}
+
+.trouble-box{
+  /* background: #EAEAEA; */
+  padding: 16px;
+}
+
+.case-box{
+  display: flex;
+  gap: 16px
+}
+
+.case-box img{
+  width: 48px;
+  height: auto;
+}
+
+.case-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.case-title p{
+  color: #3A506B;
+  display: block;
+  padding: 0px 16px;
+  border-radius: 6px; 
+  font-size: 14px;
+}
+
+.case-title h3{
+  background:#fff;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 12px 16px;
+  position: relative;
+}
+
+.case-title h3::before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: auto;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top-color:#FFF;
+}
+
+.price-box{
+  background: #FFF;
+  border-radius: 16px;
+}
+
+.price-box p{
+  padding: 6px 16px;
+}
+
+.price{
+  color: #FFA552;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+#x1{
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* case色変ーこんなこと起こるかも？＆３つのポイントー */
+.case1 .case-title p,
+.point1 .case-title p,
+.sikkari,
+.asan .voice{
+  background: #D4F3FF;
+}
+
+.case1 .price-box{
+  border: 3px solid #D4F3FF;
+}
+
+.case2 .case-title p,
+.point2 .case-title p,
+.balance,
+.bsan .voice{
+  background: #ffe9cc;
+}
+
+.case2 .price-box{
+  border: 3px solid #ffe9cc;
+}
+
+.case3 .case-title p,
+.point3 .case-title p,
+.custom,
+.csan .voice{
+  background: #f9dada;
+}
+
+.case3 .price-box{
+  border: 3px solid #f9dada;
+}
+
+/* case2　逆転、吹き出しーこんなこと起こるかも？ー */
+.reverse .case-box{
+  flex-direction: row-reverse;
+}
+
+.case2 .case-title{
+  align-items: flex-end;
+}
+
+.case2 .case-title h3::before{
+  left: -8px;
+  right: -8px;
+}
+
+
+/* コンセプト */
+#concept{
+  background: #FFF8DC;
+}
+
+#concept h2{
+  color: #3A506B;
+  text-align: center;
+  background: #FFF;
+  border-bottom: solid 8px #D4F3FF;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+#concept p{
+  padding: 16px;
+}
+
+
+/* 選ばれる３つのポイント */
+#points{
+  background: linear-gradient(180deg, #AEE6F9, #FFF8DC);
+}
+
+#points h2{
+  color: #3A506B;
+  text-align: center;
+}
+
+#threepoints{
+  background: #FFF; 
+  border-radius: 16px;
+  padding: 16px; 
+}
+
+.point-box img{
+  width: auto;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.point-detail{
+  padding: 16px;
+}
+
+.button-wrap{
+  text-align: right;
+}
+
+.point-detail button{
+  border-radius: 4px;
+  padding:  2px 4px;
+  margin: 8px 4px;
+  background: none;
+  border: 1px solid #EAEAEA;
+  color: #3A506B;
+} 
+
+/* {JS}選ばれる３つのポイント */
+.sub-txt{
+  display: none; 
+}
+
+.sub-txt.show{
+  display: block;
+}
+
+/* 選べるプラン */
+#plans{
+  background:#FFF;
+  padding-bottom: 0;
+}
+
+#plans h2{
+  color: #3A506B;
+  text-align: center;
+  border-bottom: solid 8px #D4F3FF;
+}
+
+#th{
+  text-align: center;
+  margin: 16px 0 8px;
+}
+
+#plan-box{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#plan-box img{
+  width: 120px;
+  height: auto;
+  display:block;
+  margin: 16px auto;
+}
+
+.plan{
+  text-align: center;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.plan h3{
+  color: #3A506B;
+  border-bottom: solid 2px #FFF;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 8px;
+  font-size: 14px;
+  text-align: center;
+  
+}
+
+th, td {
+  padding: 10px 8px;
+  border: 1px solid #ddd;
+}
+
+#x2{
+  font-size: 14px;
+}
+
+
+#choice{
+  background: #D4F3FF;
+  margin-top: 16px;
+  padding: 32px;
+}
+
+#choice img{
+  margin-bottom: 16px;
+}
+
+#choice p{
+  padding: 0 16px;
+}
+
+
+
+
+/* ユーザーの声 */
+#voices{
+  background:#AEE6F9;
+}
+
+#voices h2{
+  color: #FFF;
+  text-align: center;
+  background: #3A506B;
+  border-bottom: solid 8px #FAFAFA;
+  font-weight: normal;
+  margin-left: -18px;
+  margin-right: -18px;
+}
+
+.voice-box{
+  background: #fff;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.voice-box h3{
+  color: #3A506B;
+  text-align: center;
+}
+
+.voice{
+  display: inline-block;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 16px;
+  position: relative;
+}
+
+.voice::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 24px;
+  border: 8px solid transparent;
+}
+
+/* .voice::afterの色 */
+.asan .voice::after{
+  border-top-color: #D4F3FF;
+}
+
+.bsan .voice::after{
+  border-top-color: #ffe9cc;
+}
+
+.csan .voice::after{
+  border-top-color: #f9dada;
+}
+
+.user-box{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* .user-box p{
+} */
+
+.user-box img{
+  width: 50%;
+  height: auto;
+}
+
+
+/* よくあるご質問 */
+#faqsec{
+  background: linear-gradient(180deg, #fff,#AEE6F9);
+}
+
+#faqsec h2{
+  color: #3A506B;
+  text-align: center;
+  padding: 8px;
+}
+
+#faq-box{
+  display:flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq{
+  background: #FFF8DC;
+  border-radius: 8px;
+  margin: 0 16px;
+  padding: 12px;
+}
+
+.q{
+  cursor: pointer;
+}
+
+.q .tri{
+  margin-left: 2px;
+  font-size: 14px;
+}
+
+/* {JS}よくあるご質問 */
+.a{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.8s ease;
+}
+
+.a.open{
+  max-height: 200px;
+  opacity: 1;
+}
+
+
+
+
+/* クロージング */
+#close{
+  background: #fff;
+  position: relative;
+  padding: 0;
+}
+
+#final{
+  border-top: solid 15px #3A506B;
+  border-bottom: solid 15px #3A506B;
+  display: block;
+  margin-bottom: 16px;
+}
+
+#close h2{
+  color: #fff;
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+}
+
+ #close p{
+  text-align: center;
+  line-height: 1.8;
+} 
+
+.greet{
+  max-width: 200px;
+  margin: 16px auto 32px;
+}
+
+/* 画像上の文字調整 */
+#fv h2, #close h2 {
+  background: rgba(255,255,255,0.2); 
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  min-width: 260px;
+}
+
+
+/* フッター */
+footer{
+  padding: 8px 16px;
+  background:#3A506B;
+  color: #FFF;
+}
+
+footer h2{
+  color: #EAEAEA;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+footer p{
+  font-size: 8px;
+  text-align: center;
+}
+
